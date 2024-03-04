@@ -1,0 +1,8 @@
+nyc_yellow_taxi:
+  outputs:
+    dev:
+      type: duckdb
+      path: dbt.duckdb
+  target: dev
+  
+# Comment in yaml: runthe command dbt debug in shell to verify there are no errors here
