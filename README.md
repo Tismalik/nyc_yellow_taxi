@@ -1,5 +1,5 @@
 
-# Welcome to my dbt project Data transformation 
+# Welcome to my dbt Data transformation project on DuckDB 
 
 
 ### link to data: https://1drv.ms/u/s!AkYq687jBBufgakcvXMbJVGH_X2l-w?e=tuauKB
