@@ -1,0 +1,833 @@
+[0m01:27:31.214714 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024848781730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000248487819A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024848781640>]}
+
+
+============================== 01:27:31.218839 | 4cf640ec-4f92-43b8-9d08-65a3da2f31c2 ==============================
+[0m01:27:31.218839 [info ] [MainThread]: Running with dbt=1.7.9
+[0m01:27:31.219827 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\malik\\.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': 'C:\\Coding\\dbt_project\\yellow_taxi\\logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt seed', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m01:27:31.417384 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '4cf640ec-4f92-43b8-9d08-65a3da2f31c2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024847B36030>]}
+[0m01:27:31.481362 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '4cf640ec-4f92-43b8-9d08-65a3da2f31c2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024848B2AAE0>]}
+[0m01:27:31.482749 [info ] [MainThread]: Registered adapter: duckdb=1.7.2
+[0m01:27:31.491755 [debug] [MainThread]: checksum: 6ff0d83c3b46f350064523b4e08d9241403ad71d606ba49c4e670afba3668b39, vars: {}, profile: , target: , version: 1.7.9
+[0m01:27:31.492763 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m01:27:31.493756 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '4cf640ec-4f92-43b8-9d08-65a3da2f31c2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000248489F8E00>]}
+[0m01:27:32.363651 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'zipcodes.csv' in the 'seeds' section of file 'seeds\properties.yml'
+[0m01:27:32.490455 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Invalid models config given in models\taxi_data\schema.yml @ models: {'name': 'model1', 'description': 'A table cointaing all passenger who paid fare with credit card and gave tips', 'columns': [{'name': 'Payment_type', 'description': 'Patyment method used to facilitate trip', 'tests': ['not_null', {'accepted_values': None, 'values': [1]}]}, {'name': 'tip_amount', 'description': 'An amount given to show appreciation', 'tests': [None, 'not_null']}], 'original_file_path': 'models\\taxi_data\\schema.yml', 'yaml_key': 'models', 'package_name': 'yellow_taxi'} - at path ['columns'][1]['tests'][0]: None is not valid under any of the given schemas
+[0m01:27:32.491353 [debug] [MainThread]: Command `dbt seed` failed at 01:27:32.491353 after 1.43 seconds
+[0m01:27:32.491353 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002484863E750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024849F6DFD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024849F6F830>]}
+[0m01:27:32.492461 [debug] [MainThread]: Flushing usage events
+[0m01:28:40.770196 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016D44C62AB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016D44C628D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016D44C627B0>]}
+
+
+============================== 01:28:40.775096 | 6afaedf3-ce74-403a-bb52-a1c7a8ba1123 ==============================
+[0m01:28:40.775096 [info ] [MainThread]: Running with dbt=1.7.9
+[0m01:28:40.776165 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'C:\\Coding\\dbt_project\\yellow_taxi\\logs', 'profiles_dir': 'C:\\Users\\malik\\.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt seed', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m01:28:40.950411 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '6afaedf3-ce74-403a-bb52-a1c7a8ba1123', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016D448D70E0>]}
+[0m01:28:41.014412 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '6afaedf3-ce74-403a-bb52-a1c7a8ba1123', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016D44F1B890>]}
+[0m01:28:41.016413 [info ] [MainThread]: Registered adapter: duckdb=1.7.2
+[0m01:28:41.022412 [debug] [MainThread]: checksum: 6ff0d83c3b46f350064523b4e08d9241403ad71d606ba49c4e670afba3668b39, vars: {}, profile: , target: , version: 1.7.9
+[0m01:28:41.024120 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m01:28:41.024120 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '6afaedf3-ce74-403a-bb52-a1c7a8ba1123', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016D44F52DB0>]}
+[0m01:28:41.817774 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Invalid models config given in models\taxi_data\schema.yml @ models: {'name': 'model1', 'description': 'A table cointaing all passenger who paid fare with credit card and gave tips', 'columns': [{'name': 'Payment_type', 'description': 'Patyment method used to facilitate trip', 'tests': ['not_null', {'accepted_values': None, 'values': [1]}]}, {'name': 'tip_amount', 'description': 'An amount given to show appreciation', 'tests': [None, 'not_null']}], 'original_file_path': 'models\\taxi_data\\schema.yml', 'yaml_key': 'models', 'package_name': 'yellow_taxi'} - at path ['columns'][1]['tests'][0]: None is not valid under any of the given schemas
+[0m01:28:41.819037 [debug] [MainThread]: Command `dbt seed` failed at 01:28:41.819037 after 1.18 seconds
+[0m01:28:41.820166 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016D44ACBF50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016D452B6FC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016D450EC950>]}
+[0m01:28:41.820166 [debug] [MainThread]: Flushing usage events
+[0m01:33:37.304269 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BEC4942630>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BEC49436E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BEC49415B0>]}
+
+
+============================== 01:33:37.308310 | 86b88123-74ea-41f4-8890-d49867240596 ==============================
+[0m01:33:37.308310 [info ] [MainThread]: Running with dbt=1.7.9
+[0m01:33:37.308310 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\malik\\.dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': 'C:\\Coding\\dbt_project\\yellow_taxi\\logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt seed', 'send_anonymous_usage_stats': 'True'}
+[0m01:33:37.490670 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '86b88123-74ea-41f4-8890-d49867240596', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BEC49FB740>]}
+[0m01:33:37.559258 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '86b88123-74ea-41f4-8890-d49867240596', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BEC4B2AC90>]}
+[0m01:33:37.560497 [info ] [MainThread]: Registered adapter: duckdb=1.7.2
+[0m01:33:37.567639 [debug] [MainThread]: checksum: 6ff0d83c3b46f350064523b4e08d9241403ad71d606ba49c4e670afba3668b39, vars: {}, profile: , target: , version: 1.7.9
+[0m01:33:37.568788 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m01:33:37.569876 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '86b88123-74ea-41f4-8890-d49867240596', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BEC49401A0>]}
+[0m01:33:38.516890 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Invalid test config given in models\taxi_data\schema.yml:
+  	test definition dictionary must have exactly one key, got [('accepted_values', None), ('values', [1])] instead (2 keys)
+  	@: UnparsedModelUpdate(original_file_path='mode...ne)
+[0m01:33:38.524219 [debug] [MainThread]: Command `dbt seed` failed at 01:33:38.524219 after 1.37 seconds
+[0m01:33:38.524219 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BEC47DB4D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BEC5F7F560>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BEC4D75E50>]}
+[0m01:33:38.525162 [debug] [MainThread]: Flushing usage events
+[0m01:35:06.116774 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B013A62A50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B013A62BD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B013A61F10>]}
+
+
+============================== 01:35:06.121785 | 31b9b045-fdab-4424-97ba-aaabc49730d9 ==============================
+[0m01:35:06.121785 [info ] [MainThread]: Running with dbt=1.7.9
+[0m01:35:06.121785 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\malik\\.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': 'C:\\Coding\\dbt_project\\yellow_taxi\\logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt seed', 'send_anonymous_usage_stats': 'True'}
+[0m01:35:06.337439 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '31b9b045-fdab-4424-97ba-aaabc49730d9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B013A61700>]}
+[0m01:35:06.419441 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '31b9b045-fdab-4424-97ba-aaabc49730d9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B013E3A2A0>]}
+[0m01:35:06.420439 [info ] [MainThread]: Registered adapter: duckdb=1.7.2
+[0m01:35:06.428071 [debug] [MainThread]: checksum: 6ff0d83c3b46f350064523b4e08d9241403ad71d606ba49c4e670afba3668b39, vars: {}, profile: , target: , version: 1.7.9
+[0m01:35:06.429073 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m01:35:06.430073 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '31b9b045-fdab-4424-97ba-aaabc49730d9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B013D9AD80>]}
+[0m01:35:07.328918 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Invalid test config given in models\taxi_data\schema.yml:
+  	test definition dictionary must have exactly one key, got [('accepted_values', None), ('values', [1, 2])] instead (2 keys)
+  	@: UnparsedModelUpdate(original_file_path='mode...ne)
+[0m01:35:07.329923 [debug] [MainThread]: Command `dbt seed` failed at 01:35:07.329923 after 1.35 seconds
+[0m01:35:07.330921 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B013869A90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B015117B60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B015280C80>]}
+[0m01:35:07.330921 [debug] [MainThread]: Flushing usage events
+[0m01:36:40.157851 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026128522C30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026128523470>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026128522BA0>]}
+
+
+============================== 01:36:40.160849 | 64f0537b-b5f6-4539-a587-4ba928f547f6 ==============================
+[0m01:36:40.160849 [info ] [MainThread]: Running with dbt=1.7.9
+[0m01:36:40.161786 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\malik\\.dbt', 'log_path': 'C:\\Coding\\dbt_project\\yellow_taxi\\logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt seed', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m01:36:40.340555 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '64f0537b-b5f6-4539-a587-4ba928f547f6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026128522BD0>]}
+[0m01:36:40.406374 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '64f0537b-b5f6-4539-a587-4ba928f547f6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026128827FE0>]}
+[0m01:36:40.408256 [info ] [MainThread]: Registered adapter: duckdb=1.7.2
+[0m01:36:40.415466 [debug] [MainThread]: checksum: 6ff0d83c3b46f350064523b4e08d9241403ad71d606ba49c4e670afba3668b39, vars: {}, profile: , target: , version: 1.7.9
+[0m01:36:40.417465 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m01:36:40.417465 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '64f0537b-b5f6-4539-a587-4ba928f547f6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000261287FC0E0>]}
+[0m01:36:41.345915 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Invalid test config given in models\taxi_data\schema.yml:
+  	test definition dictionary must have exactly one key, got [('accepted_values', None), ('values', ['1'])] instead (2 keys)
+  	@: UnparsedModelUpdate(original_file_path='mode...ne)
+[0m01:36:41.347919 [debug] [MainThread]: Command `dbt seed` failed at 01:36:41.346814 after 1.34 seconds
+[0m01:36:41.347919 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002612812DF40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026129CD7710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026129C1AB10>]}
+[0m01:36:41.347919 [debug] [MainThread]: Flushing usage events
+[0m01:37:05.407714 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015B89C03BC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015B89C02480>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015B89C01610>]}
+
+
+============================== 01:37:05.412861 | 334dc072-d2e7-4714-bfd6-7c2e4de3baba ==============================
+[0m01:37:05.412861 [info ] [MainThread]: Running with dbt=1.7.9
+[0m01:37:05.414330 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'C:\\Coding\\dbt_project\\yellow_taxi\\logs', 'profiles_dir': 'C:\\Users\\malik\\.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt seed', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m01:37:05.592781 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '334dc072-d2e7-4714-bfd6-7c2e4de3baba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015B89DC5370>]}
+[0m01:37:05.657669 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '334dc072-d2e7-4714-bfd6-7c2e4de3baba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015B89EFAD20>]}
+[0m01:37:05.659070 [info ] [MainThread]: Registered adapter: duckdb=1.7.2
+[0m01:37:05.666697 [debug] [MainThread]: checksum: 6ff0d83c3b46f350064523b4e08d9241403ad71d606ba49c4e670afba3668b39, vars: {}, profile: , target: , version: 1.7.9
+[0m01:37:05.668607 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m01:37:05.669618 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '334dc072-d2e7-4714-bfd6-7c2e4de3baba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015B89CEBA70>]}
+[0m01:37:06.574687 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Invalid test config given in models\taxi_data\schema.yml:
+  	test definition dictionary must have exactly one key, got [('joined_data_no_dups', None), ('column_name2', 'province_code')] instead (2 keys)
+  	@: UnparsedModelUpdate(original_file_path='mode...ne)
+[0m01:37:06.582358 [debug] [MainThread]: Command `dbt seed` failed at 01:37:06.581231 after 1.30 seconds
+[0m01:37:06.582358 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015B8B2AFC20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015B8B3AF9B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015B8B1E43B0>]}
+[0m01:37:06.582358 [debug] [MainThread]: Flushing usage events
+[0m01:42:30.817679 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021AAE8DBAA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021AAE8DBF80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021AAE8DAC00>]}
+
+
+============================== 01:42:30.821698 | bcb4874d-cd2c-402d-82a9-5fee2b5726fd ==============================
+[0m01:42:30.821698 [info ] [MainThread]: Running with dbt=1.7.9
+[0m01:42:30.822680 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\malik\\.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': 'C:\\Coding\\dbt_project\\yellow_taxi\\logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt build', 'send_anonymous_usage_stats': 'True'}
+[0m01:42:31.006229 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'bcb4874d-cd2c-402d-82a9-5fee2b5726fd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021AAEA85970>]}
+[0m01:42:31.076232 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'bcb4874d-cd2c-402d-82a9-5fee2b5726fd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021AAE98B140>]}
+[0m01:42:31.077232 [info ] [MainThread]: Registered adapter: duckdb=1.7.2
+[0m01:42:31.085230 [debug] [MainThread]: checksum: 6ff0d83c3b46f350064523b4e08d9241403ad71d606ba49c4e670afba3668b39, vars: {}, profile: , target: , version: 1.7.9
+[0m01:42:31.087229 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m01:42:31.088240 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'bcb4874d-cd2c-402d-82a9-5fee2b5726fd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021AAEBB9970>]}
+[0m01:42:31.983345 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Invalid test config given in models\taxi_data\schema.yml:
+  	test definition dictionary must have exactly one key, got [('accepted_values', None), ('values', [1])] instead (2 keys)
+  	@: UnparsedModelUpdate(original_file_path='mode...ne)
+[0m01:42:31.984354 [debug] [MainThread]: Command `dbt build` failed at 01:42:31.984354 after 1.32 seconds
+[0m01:42:31.985345 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021AAC155040>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021AAFFBA690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021AAFEADE50>]}
+[0m01:42:31.985345 [debug] [MainThread]: Flushing usage events
+[0m01:43:38.339855 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000236B7845370>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000236B7846C00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000236B7846150>]}
+
+
+============================== 01:43:38.345988 | c827dd7f-2456-4fd8-bc50-7f0ede131797 ==============================
+[0m01:43:38.345988 [info ] [MainThread]: Running with dbt=1.7.9
+[0m01:43:38.346883 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\malik\\.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'C:\\Coding\\dbt_project\\yellow_taxi\\logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt build', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m01:43:38.527890 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'c827dd7f-2456-4fd8-bc50-7f0ede131797', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000236B7821F70>]}
+[0m01:43:38.595736 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'c827dd7f-2456-4fd8-bc50-7f0ede131797', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000236B7A294C0>]}
+[0m01:43:38.597715 [info ] [MainThread]: Registered adapter: duckdb=1.7.2
+[0m01:43:38.604746 [debug] [MainThread]: checksum: 6ff0d83c3b46f350064523b4e08d9241403ad71d606ba49c4e670afba3668b39, vars: {}, profile: , target: , version: 1.7.9
+[0m01:43:38.606741 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m01:43:38.606741 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'c827dd7f-2456-4fd8-bc50-7f0ede131797', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000236B7B4ADB0>]}
+[0m01:43:39.536666 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.yellow_taxi.model2' (models\taxi_data\model2.sql) depends on a node named 'zipcode' which was not found
+[0m01:43:39.538667 [debug] [MainThread]: Command `dbt build` failed at 01:43:39.537568 after 1.35 seconds
+[0m01:43:39.538667 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000236B72BDDC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000236B8E57E60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000236B8F6C410>]}
+[0m01:43:39.538667 [debug] [MainThread]: Flushing usage events
+[0m01:44:06.495085 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000246821C2240>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024681E14980>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000246821C1A90>]}
+
+
+============================== 01:44:06.501078 | 220bb410-6e51-426c-8b22-dc59bcf8c5c9 ==============================
+[0m01:44:06.501078 [info ] [MainThread]: Running with dbt=1.7.9
+[0m01:44:06.501972 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'C:\\Coding\\dbt_project\\yellow_taxi\\logs', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\malik\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt seed', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m01:44:06.681585 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '220bb410-6e51-426c-8b22-dc59bcf8c5c9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000246821C0D70>]}
+[0m01:44:06.747585 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '220bb410-6e51-426c-8b22-dc59bcf8c5c9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000246824B82F0>]}
+[0m01:44:06.748641 [info ] [MainThread]: Registered adapter: duckdb=1.7.2
+[0m01:44:06.756811 [debug] [MainThread]: checksum: 6ff0d83c3b46f350064523b4e08d9241403ad71d606ba49c4e670afba3668b39, vars: {}, profile: , target: , version: 1.7.9
+[0m01:44:06.758820 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m01:44:06.759850 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '220bb410-6e51-426c-8b22-dc59bcf8c5c9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002468223A750>]}
+[0m01:44:07.657228 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.yellow_taxi.model2' (models\taxi_data\model2.sql) depends on a node named 'zipcode' which was not found
+[0m01:44:07.659300 [debug] [MainThread]: Command `dbt seed` failed at 01:44:07.659300 after 1.29 seconds
+[0m01:44:07.659300 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000246818D6630>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000246838CD9A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000246838B4AD0>]}
+[0m01:44:07.660168 [debug] [MainThread]: Flushing usage events
+[0m01:47:32.530210 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001521C7D3A70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001521C7D2D20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001521C7D3C20>]}
+
+
+============================== 01:47:32.534271 | 2dce2c56-4f73-4060-95c1-886f6f92d775 ==============================
+[0m01:47:32.534271 [info ] [MainThread]: Running with dbt=1.7.9
+[0m01:47:32.535247 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\malik\\.dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': 'C:\\Coding\\dbt_project\\yellow_taxi\\logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt seed', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m01:47:32.711263 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '2dce2c56-4f73-4060-95c1-886f6f92d775', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001521CAA3B60>]}
+[0m01:47:32.774208 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '2dce2c56-4f73-4060-95c1-886f6f92d775', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001521C8B03B0>]}
+[0m01:47:32.775997 [info ] [MainThread]: Registered adapter: duckdb=1.7.2
+[0m01:47:32.783324 [debug] [MainThread]: checksum: 6ff0d83c3b46f350064523b4e08d9241403ad71d606ba49c4e670afba3668b39, vars: {}, profile: , target: , version: 1.7.9
+[0m01:47:32.785342 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m01:47:32.785342 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '2dce2c56-4f73-4060-95c1-886f6f92d775', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001521CB87350>]}
+[0m01:47:33.687689 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.yellow_taxi.model2' (models\taxi_data\model2.sql) depends on a node named 'zipcode' which was not found
+[0m01:47:33.688689 [debug] [MainThread]: Command `dbt seed` failed at 01:47:33.688689 after 1.32 seconds
+[0m01:47:33.689714 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001521DFFE4E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001521DEBF3E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001521DF9E9C0>]}
+[0m01:47:33.689714 [debug] [MainThread]: Flushing usage events
+[0m01:47:46.071890 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BC434C2720>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BC42EA4980>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BC434C3470>]}
+
+
+============================== 01:47:46.076893 | 013731a5-6a12-440d-9531-f75d736ae2c8 ==============================
+[0m01:47:46.076893 [info ] [MainThread]: Running with dbt=1.7.9
+[0m01:47:46.077901 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'C:\\Coding\\dbt_project\\yellow_taxi\\logs', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\malik\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt run', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m01:47:46.258948 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '013731a5-6a12-440d-9531-f75d736ae2c8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BC434C1E50>]}
+[0m01:47:46.324947 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '013731a5-6a12-440d-9531-f75d736ae2c8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BC404036B0>]}
+[0m01:47:46.325940 [info ] [MainThread]: Registered adapter: duckdb=1.7.2
+[0m01:47:46.332377 [debug] [MainThread]: checksum: 6ff0d83c3b46f350064523b4e08d9241403ad71d606ba49c4e670afba3668b39, vars: {}, profile: , target: , version: 1.7.9
+[0m01:47:46.334260 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m01:47:46.335261 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '013731a5-6a12-440d-9531-f75d736ae2c8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BC4385C320>]}
+[0m01:47:47.257508 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.yellow_taxi.model2' (models\taxi_data\model2.sql) depends on a node named 'zipcode' which was not found
+[0m01:47:47.259573 [debug] [MainThread]: Command `dbt run` failed at 01:47:47.259573 after 1.31 seconds
+[0m01:47:47.259573 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BC44BDC9B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BC44C45FD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BC44C44080>]}
+[0m01:47:47.260547 [debug] [MainThread]: Flushing usage events
+[0m01:48:50.167964 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A4B3A37D40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A4B3A37290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A4B3A36450>]}
+
+
+============================== 01:48:50.173099 | 0f6ac69e-c191-49c9-81ac-336afd1094c2 ==============================
+[0m01:48:50.173099 [info ] [MainThread]: Running with dbt=1.7.9
+[0m01:48:50.174973 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\malik\\.dbt', 'log_path': 'C:\\Coding\\dbt_project\\yellow_taxi\\logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt test', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m01:48:50.354362 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '0f6ac69e-c191-49c9-81ac-336afd1094c2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A4B3A12090>]}
+[0m01:48:50.418249 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '0f6ac69e-c191-49c9-81ac-336afd1094c2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A4B3D57EF0>]}
+[0m01:48:50.420291 [info ] [MainThread]: Registered adapter: duckdb=1.7.2
+[0m01:48:50.427551 [debug] [MainThread]: checksum: 6ff0d83c3b46f350064523b4e08d9241403ad71d606ba49c4e670afba3668b39, vars: {}, profile: , target: , version: 1.7.9
+[0m01:48:50.429554 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m01:48:50.430552 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '0f6ac69e-c191-49c9-81ac-336afd1094c2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A4B3879070>]}
+[0m01:48:51.327258 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.yellow_taxi.model2' (models\taxi_data\model2.sql) depends on a node named 'zipcode' which was not found
+[0m01:48:51.328168 [debug] [MainThread]: Command `dbt test` failed at 01:48:51.328168 after 1.32 seconds
+[0m01:48:51.329262 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A4B371F200>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A4B514AAB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A4B516E4E0>]}
+[0m01:48:51.329262 [debug] [MainThread]: Flushing usage events
+[0m01:55:31.026434 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BA59FE1AC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BA59FE2E10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BA59FE1550>]}
+
+
+============================== 01:55:31.030294 | f3515d77-97af-4aab-b208-aa8f71fe3070 ==============================
+[0m01:55:31.030294 [info ] [MainThread]: Running with dbt=1.7.9
+[0m01:55:31.031293 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\malik\\.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': 'C:\\Coding\\dbt_project\\yellow_taxi\\logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'invocation_command': 'dbt seed', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m01:55:31.247656 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'f3515d77-97af-4aab-b208-aa8f71fe3070', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BA5A059D60>]}
+[0m01:55:31.321224 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'f3515d77-97af-4aab-b208-aa8f71fe3070', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BA5A2DBBF0>]}
+[0m01:55:31.322737 [info ] [MainThread]: Registered adapter: duckdb=1.7.2
+[0m01:55:31.330309 [debug] [MainThread]: checksum: 6ff0d83c3b46f350064523b4e08d9241403ad71d606ba49c4e670afba3668b39, vars: {}, profile: , target: , version: 1.7.9
+[0m01:55:31.331290 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m01:55:31.332289 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'f3515d77-97af-4aab-b208-aa8f71fe3070', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BA5A05ADB0>]}
+[0m01:55:32.276309 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.yellow_taxi.model2' (models\taxi_data\model2.sql) depends on a node named 'zipcode' which was not found
+[0m01:55:32.278002 [debug] [MainThread]: Command `dbt seed` failed at 01:55:32.278002 after 1.45 seconds
+[0m01:55:32.279112 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BA59ED59D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BA5B757FE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BA5B832720>]}
+[0m01:55:32.279112 [debug] [MainThread]: Flushing usage events
+[0m01:55:51.781118 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002385AD32630>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002385AD32690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002385AD323C0>]}
+
+
+============================== 01:55:51.787161 | f683c7b2-1ae8-4526-8a32-18127f1d742a ==============================
+[0m01:55:51.787161 [info ] [MainThread]: Running with dbt=1.7.9
+[0m01:55:51.789135 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\malik\\.dbt', 'log_path': 'C:\\Coding\\dbt_project\\yellow_taxi\\logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt test', 'send_anonymous_usage_stats': 'True'}
+[0m01:55:51.990000 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'f683c7b2-1ae8-4526-8a32-18127f1d742a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002385ADCE420>]}
+[0m01:55:52.058135 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'f683c7b2-1ae8-4526-8a32-18127f1d742a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002385B0E2C60>]}
+[0m01:55:52.059043 [info ] [MainThread]: Registered adapter: duckdb=1.7.2
+[0m01:55:52.065092 [debug] [MainThread]: checksum: 6ff0d83c3b46f350064523b4e08d9241403ad71d606ba49c4e670afba3668b39, vars: {}, profile: , target: , version: 1.7.9
+[0m01:55:52.067054 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m01:55:52.068078 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'f683c7b2-1ae8-4526-8a32-18127f1d742a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002385B0AC0E0>]}
+[0m01:55:53.048346 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.yellow_taxi.model2' (models\taxi_data\model2.sql) depends on a node named 'zipcode' which was not found
+[0m01:55:53.050274 [debug] [MainThread]: Command `dbt test` failed at 01:55:53.050274 after 1.41 seconds
+[0m01:55:53.051353 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002385AB5B920>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002385C48F1D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002385C4F1400>]}
+[0m01:55:53.051353 [debug] [MainThread]: Flushing usage events
+[0m01:57:48.073446 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C3905D0EC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C3905D29F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C3905D16A0>]}
+
+
+============================== 01:57:48.076447 | dd20b0ba-9db1-41cd-96eb-07afaa6a3e81 ==============================
+[0m01:57:48.076447 [info ] [MainThread]: Running with dbt=1.7.9
+[0m01:57:48.077452 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\malik\\.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': 'C:\\Coding\\dbt_project\\yellow_taxi\\logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt seed', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m01:57:48.252442 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'dd20b0ba-9db1-41cd-96eb-07afaa6a3e81', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C3905B2780>]}
+[0m01:57:48.316440 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'dd20b0ba-9db1-41cd-96eb-07afaa6a3e81', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C3908FBDA0>]}
+[0m01:57:48.318341 [info ] [MainThread]: Registered adapter: duckdb=1.7.2
+[0m01:57:48.326002 [debug] [MainThread]: checksum: 6ff0d83c3b46f350064523b4e08d9241403ad71d606ba49c4e670afba3668b39, vars: {}, profile: , target: , version: 1.7.9
+[0m01:57:48.327065 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m01:57:48.328004 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'dd20b0ba-9db1-41cd-96eb-07afaa6a3e81', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C39085BE30>]}
+[0m01:57:49.023728 [error] [MainThread]: Encountered an error:
+Internal Error
+  expected dict, got QUOTE_MINIMAL
+[0m01:57:49.025780 [debug] [MainThread]: Command `dbt seed` failed at 01:57:49.025780 after 1.11 seconds
+[0m01:57:49.025780 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C3901BFE30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C3909733B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C39085B140>]}
+[0m01:57:49.026730 [debug] [MainThread]: Flushing usage events
+[0m01:58:11.379725 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D3D766D1C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D3D766DB20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D3D766CA70>]}
+
+
+============================== 01:58:11.384763 | e38f80dc-5e7c-4f71-b86d-f712f6362e36 ==============================
+[0m01:58:11.384763 [info ] [MainThread]: Running with dbt=1.7.9
+[0m01:58:11.385696 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\malik\\.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'C:\\Coding\\dbt_project\\yellow_taxi\\logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'invocation_command': 'dbt seed', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m01:58:11.564752 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'e38f80dc-5e7c-4f71-b86d-f712f6362e36', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D3D7697320>]}
+[0m01:58:11.628802 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'e38f80dc-5e7c-4f71-b86d-f712f6362e36', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D3D7753CE0>]}
+[0m01:58:11.630703 [info ] [MainThread]: Registered adapter: duckdb=1.7.2
+[0m01:58:11.638061 [debug] [MainThread]: checksum: 6ff0d83c3b46f350064523b4e08d9241403ad71d606ba49c4e670afba3668b39, vars: {}, profile: , target: , version: 1.7.9
+[0m01:58:11.640061 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m01:58:11.641060 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'e38f80dc-5e7c-4f71-b86d-f712f6362e36', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D3D678C230>]}
+[0m01:58:12.624037 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'e38f80dc-5e7c-4f71-b86d-f712f6362e36', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D3D8E31940>]}
+[0m01:58:12.637037 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'e38f80dc-5e7c-4f71-b86d-f712f6362e36', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D3D8C5E4B0>]}
+[0m01:58:12.638037 [info ] [MainThread]: Found 3 models, 8 tests, 1 seed, 0 sources, 0 exposures, 0 metrics, 391 macros, 0 groups, 0 semantic models
+[0m01:58:12.638037 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e38f80dc-5e7c-4f71-b86d-f712f6362e36', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D3D8D8D820>]}
+[0m01:58:12.640037 [info ] [MainThread]: 
+[0m01:58:12.641037 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m01:58:12.642037 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_dev'
+[0m01:58:12.652041 [debug] [ThreadPool]: Using duckdb connection "list_dev"
+[0m01:58:12.652041 [debug] [ThreadPool]: On list_dev: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "yellow_taxi", "target_name": "dev", "connection_name": "list_dev"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where catalog_name = '"dev"'
+    
+  
+  
+[0m01:58:12.653042 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m01:58:12.676037 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m01:58:12.678037 [debug] [ThreadPool]: On list_dev: Close
+[0m01:58:12.681043 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dev, now create_dev_main)
+[0m01:58:12.682072 [debug] [ThreadPool]: Creating schema "database: "dev"
+schema: "main"
+"
+[0m01:58:12.689060 [debug] [ThreadPool]: Using duckdb connection "create_dev_main"
+[0m01:58:12.690061 [debug] [ThreadPool]: On create_dev_main: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "yellow_taxi", "target_name": "dev", "connection_name": "create_dev_main"} */
+
+    
+        select type from duckdb_databases()
+        where database_name='dev'
+        and type='sqlite'
+    
+  
+[0m01:58:12.690061 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m01:58:12.704641 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m01:58:12.705646 [debug] [ThreadPool]: Using duckdb connection "create_dev_main"
+[0m01:58:12.706743 [debug] [ThreadPool]: On create_dev_main: BEGIN
+[0m01:58:12.706743 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m01:58:12.707647 [debug] [ThreadPool]: Using duckdb connection "create_dev_main"
+[0m01:58:12.707647 [debug] [ThreadPool]: On create_dev_main: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "yellow_taxi", "target_name": "dev", "connection_name": "create_dev_main"} */
+
+    
+    
+        create schema if not exists "dev"."main"
+    
+[0m01:58:12.710641 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m01:58:12.711686 [debug] [ThreadPool]: On create_dev_main: COMMIT
+[0m01:58:12.711686 [debug] [ThreadPool]: Using duckdb connection "create_dev_main"
+[0m01:58:12.712749 [debug] [ThreadPool]: On create_dev_main: COMMIT
+[0m01:58:12.712749 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m01:58:12.713748 [debug] [ThreadPool]: On create_dev_main: Close
+[0m01:58:12.716645 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_dev_main'
+[0m01:58:12.721748 [debug] [ThreadPool]: Using duckdb connection "list_dev_main"
+[0m01:58:12.721748 [debug] [ThreadPool]: On list_dev_main: BEGIN
+[0m01:58:12.722764 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m01:58:12.728642 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m01:58:12.729646 [debug] [ThreadPool]: Using duckdb connection "list_dev_main"
+[0m01:58:12.729646 [debug] [ThreadPool]: On list_dev_main: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "yellow_taxi", "target_name": "dev", "connection_name": "list_dev_main"} */
+select
+      'dev' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where table_schema = 'main'
+    and table_catalog = 'dev'
+  
+[0m01:58:12.774780 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m01:58:12.775781 [debug] [ThreadPool]: On list_dev_main: ROLLBACK
+[0m01:58:12.778780 [debug] [ThreadPool]: Failed to rollback 'list_dev_main'
+[0m01:58:12.778780 [debug] [ThreadPool]: On list_dev_main: Close
+[0m01:58:12.780783 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e38f80dc-5e7c-4f71-b86d-f712f6362e36', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D3D6F9ABD0>]}
+[0m01:58:12.781781 [debug] [MainThread]: Using duckdb connection "master"
+[0m01:58:12.781781 [debug] [MainThread]: On master: BEGIN
+[0m01:58:12.782780 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m01:58:12.786780 [debug] [MainThread]: SQL status: OK in 0.0 seconds
+[0m01:58:12.786780 [debug] [MainThread]: On master: COMMIT
+[0m01:58:12.787804 [debug] [MainThread]: Using duckdb connection "master"
+[0m01:58:12.787804 [debug] [MainThread]: On master: COMMIT
+[0m01:58:12.787804 [debug] [MainThread]: SQL status: OK in 0.0 seconds
+[0m01:58:12.788781 [debug] [MainThread]: On master: Close
+[0m01:58:12.789657 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m01:58:12.790770 [info ] [MainThread]: 
+[0m01:58:12.794740 [debug] [Thread-1 (]: Began running node seed.yellow_taxi.zipcodes
+[0m01:58:12.795743 [info ] [Thread-1 (]: 1 of 1 START seed file main.zipcodes ........................................... [RUN]
+[0m01:58:12.796740 [debug] [Thread-1 (]: Acquiring new duckdb connection 'seed.yellow_taxi.zipcodes'
+[0m01:58:12.796740 [debug] [Thread-1 (]: Began compiling node seed.yellow_taxi.zipcodes
+[0m01:58:12.797745 [debug] [Thread-1 (]: Timing info for seed.yellow_taxi.zipcodes (compile): 01:58:12.796740 => 01:58:12.796740
+[0m01:58:12.797745 [debug] [Thread-1 (]: Began executing node seed.yellow_taxi.zipcodes
+[0m01:58:14.150176 [debug] [Thread-1 (]: Using duckdb connection "seed.yellow_taxi.zipcodes"
+[0m01:58:14.150176 [debug] [Thread-1 (]: On seed.yellow_taxi.zipcodes: BEGIN
+[0m01:58:14.151170 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m01:58:14.156184 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m01:58:14.156184 [debug] [Thread-1 (]: Using duckdb connection "seed.yellow_taxi.zipcodes"
+[0m01:58:14.157143 [debug] [Thread-1 (]: On seed.yellow_taxi.zipcodes: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "yellow_taxi", "target_name": "dev", "node_id": "seed.yellow_taxi.zipcodes"} */
+
+    create table "dev"."main"."zipcodes" ("country_code" varchar(2),"zipcode" integer,"place" text,"state" text,"state_code" text,"province" text,"province_code" integer,"community" text,"community_code" integer,"latitude" float8,"longitude" float8)
+  
+[0m01:58:14.159117 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m01:58:14.169131 [debug] [Thread-1 (]: Using duckdb connection "seed.yellow_taxi.zipcodes"
+[0m01:58:14.170131 [debug] [Thread-1 (]: On seed.yellow_taxi.zipcodes: 
+          COPY "dev"."main"."zipcodes" FROM 'C:\Coding\dbt_project\yellow_taxi\seeds\zipcodes.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        ...
+[0m01:58:14.258331 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m01:58:14.263332 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.yellow_taxi.zipcodes"
+[0m01:58:14.279441 [debug] [Thread-1 (]: On seed.yellow_taxi.zipcodes: COMMIT
+[0m01:58:14.280336 [debug] [Thread-1 (]: Using duckdb connection "seed.yellow_taxi.zipcodes"
+[0m01:58:14.280336 [debug] [Thread-1 (]: On seed.yellow_taxi.zipcodes: COMMIT
+[0m01:58:14.297115 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m01:58:14.298105 [debug] [Thread-1 (]: Timing info for seed.yellow_taxi.zipcodes (execute): 01:58:12.797745 => 01:58:14.297115
+[0m01:58:14.298105 [debug] [Thread-1 (]: On seed.yellow_taxi.zipcodes: Close
+[0m01:58:14.340064 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'e38f80dc-5e7c-4f71-b86d-f712f6362e36', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D3D8EDC230>]}
+[0m01:58:14.341046 [info ] [Thread-1 (]: 1 of 1 OK loaded seed file main.zipcodes ....................................... [[32mINSERT 41483[0m in 1.54s]
+[0m01:58:14.341046 [debug] [Thread-1 (]: Finished running node seed.yellow_taxi.zipcodes
+[0m01:58:14.343046 [debug] [MainThread]: Using duckdb connection "master"
+[0m01:58:14.343046 [debug] [MainThread]: On master: BEGIN
+[0m01:58:14.344065 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m01:58:14.352046 [debug] [MainThread]: SQL status: OK in 0.0 seconds
+[0m01:58:14.353047 [debug] [MainThread]: On master: COMMIT
+[0m01:58:14.353047 [debug] [MainThread]: Using duckdb connection "master"
+[0m01:58:14.354048 [debug] [MainThread]: On master: COMMIT
+[0m01:58:14.354048 [debug] [MainThread]: SQL status: OK in 0.0 seconds
+[0m01:58:14.355046 [debug] [MainThread]: On master: Close
+[0m01:58:14.357067 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m01:58:14.357067 [debug] [MainThread]: Connection 'create_dev_main' was properly closed.
+[0m01:58:14.358047 [debug] [MainThread]: Connection 'list_dev_main' was properly closed.
+[0m01:58:14.358047 [debug] [MainThread]: Connection 'seed.yellow_taxi.zipcodes' was properly closed.
+[0m01:58:14.358047 [info ] [MainThread]: 
+[0m01:58:14.359047 [info ] [MainThread]: Finished running 1 seed in 0 hours 0 minutes and 1.72 seconds (1.72s).
+[0m01:58:14.360048 [debug] [MainThread]: Command end result
+[0m01:58:14.368068 [info ] [MainThread]: 
+[0m01:58:14.369046 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m01:58:14.370047 [info ] [MainThread]: 
+[0m01:58:14.370047 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m01:58:14.372047 [debug] [MainThread]: Command `dbt seed` succeeded at 01:58:14.372047 after 3.12 seconds
+[0m01:58:14.372047 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D3D7563890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D3D6F9ABD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D3D70556A0>]}
+[0m01:58:14.373078 [debug] [MainThread]: Flushing usage events
+[0m01:58:27.736908 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000232D31D5970>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000232D31D66F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000232D31D5FD0>]}
+
+
+============================== 01:58:27.741850 | 2b9d00f7-528d-4cd8-82bc-5793b3ec5a3c ==============================
+[0m01:58:27.741850 [info ] [MainThread]: Running with dbt=1.7.9
+[0m01:58:27.742848 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\malik\\.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'C:\\Coding\\dbt_project\\yellow_taxi\\logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt build', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m01:58:27.951974 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '2b9d00f7-528d-4cd8-82bc-5793b3ec5a3c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000232D325D1C0>]}
+[0m01:58:28.027860 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '2b9d00f7-528d-4cd8-82bc-5793b3ec5a3c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000232D2AFEAE0>]}
+[0m01:58:28.029745 [info ] [MainThread]: Registered adapter: duckdb=1.7.2
+[0m01:58:28.038755 [debug] [MainThread]: checksum: 6ff0d83c3b46f350064523b4e08d9241403ad71d606ba49c4e670afba3668b39, vars: {}, profile: , target: , version: 1.7.9
+[0m01:58:28.129942 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m01:58:28.129942 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m01:58:28.137950 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '2b9d00f7-528d-4cd8-82bc-5793b3ec5a3c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000232D456C5F0>]}
+[0m01:58:28.148972 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '2b9d00f7-528d-4cd8-82bc-5793b3ec5a3c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000232D350B050>]}
+[0m01:58:28.149968 [info ] [MainThread]: Found 3 models, 8 tests, 1 seed, 0 sources, 0 exposures, 0 metrics, 391 macros, 0 groups, 0 semantic models
+[0m01:58:28.151971 [info ] [MainThread]: 
+[0m01:58:28.152968 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m01:58:28.154969 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_dev'
+[0m01:58:28.166967 [debug] [ThreadPool]: Using duckdb connection "list_dev"
+[0m01:58:28.166967 [debug] [ThreadPool]: On list_dev: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "yellow_taxi", "target_name": "dev", "connection_name": "list_dev"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where catalog_name = '"dev"'
+    
+  
+  
+[0m01:58:28.167966 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m01:58:28.179966 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m01:58:28.180967 [debug] [ThreadPool]: On list_dev: Close
+[0m01:58:28.184967 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dev, now create_dev_main)
+[0m01:58:28.185968 [debug] [ThreadPool]: Creating schema "database: "dev"
+schema: "main"
+"
+[0m01:58:28.191968 [debug] [ThreadPool]: Using duckdb connection "create_dev_main"
+[0m01:58:28.192967 [debug] [ThreadPool]: On create_dev_main: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "yellow_taxi", "target_name": "dev", "connection_name": "create_dev_main"} */
+
+    
+        select type from duckdb_databases()
+        where database_name='dev'
+        and type='sqlite'
+    
+  
+[0m01:58:28.192967 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m01:58:28.199966 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m01:58:28.201966 [debug] [ThreadPool]: Using duckdb connection "create_dev_main"
+[0m01:58:28.202967 [debug] [ThreadPool]: On create_dev_main: BEGIN
+[0m01:58:28.203967 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m01:58:28.203967 [debug] [ThreadPool]: Using duckdb connection "create_dev_main"
+[0m01:58:28.203967 [debug] [ThreadPool]: On create_dev_main: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "yellow_taxi", "target_name": "dev", "connection_name": "create_dev_main"} */
+
+    
+    
+        create schema if not exists "dev"."main"
+    
+[0m01:58:28.204966 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m01:58:28.205965 [debug] [ThreadPool]: On create_dev_main: COMMIT
+[0m01:58:28.205965 [debug] [ThreadPool]: Using duckdb connection "create_dev_main"
+[0m01:58:28.205965 [debug] [ThreadPool]: On create_dev_main: COMMIT
+[0m01:58:28.206972 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m01:58:28.206972 [debug] [ThreadPool]: On create_dev_main: Close
+[0m01:58:28.210975 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_dev_main'
+[0m01:58:28.216082 [debug] [ThreadPool]: Using duckdb connection "list_dev_main"
+[0m01:58:28.216082 [debug] [ThreadPool]: On list_dev_main: BEGIN
+[0m01:58:28.216968 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m01:58:28.221967 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m01:58:28.222966 [debug] [ThreadPool]: Using duckdb connection "list_dev_main"
+[0m01:58:28.222966 [debug] [ThreadPool]: On list_dev_main: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "yellow_taxi", "target_name": "dev", "connection_name": "list_dev_main"} */
+select
+      'dev' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where table_schema = 'main'
+    and table_catalog = 'dev'
+  
+[0m01:58:28.247967 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m01:58:28.252965 [debug] [ThreadPool]: On list_dev_main: ROLLBACK
+[0m01:58:28.254424 [debug] [ThreadPool]: Failed to rollback 'list_dev_main'
+[0m01:58:28.255429 [debug] [ThreadPool]: On list_dev_main: Close
+[0m01:58:28.258548 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '2b9d00f7-528d-4cd8-82bc-5793b3ec5a3c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000232D31F8AA0>]}
+[0m01:58:28.258548 [debug] [MainThread]: Using duckdb connection "master"
+[0m01:58:28.259432 [debug] [MainThread]: On master: BEGIN
+[0m01:58:28.259432 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m01:58:28.264431 [debug] [MainThread]: SQL status: OK in 0.0 seconds
+[0m01:58:28.264431 [debug] [MainThread]: On master: COMMIT
+[0m01:58:28.265429 [debug] [MainThread]: Using duckdb connection "master"
+[0m01:58:28.265429 [debug] [MainThread]: On master: COMMIT
+[0m01:58:28.266429 [debug] [MainThread]: SQL status: OK in 0.0 seconds
+[0m01:58:28.266429 [debug] [MainThread]: On master: Close
+[0m01:58:28.267464 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m01:58:28.268581 [info ] [MainThread]: 
+[0m01:58:28.271578 [debug] [Thread-1 (]: Began running node model.yellow_taxi.model1
+[0m01:58:28.272606 [info ] [Thread-1 (]: 1 of 12 START sql view model main.model1 ....................................... [RUN]
+[0m01:58:28.273583 [debug] [Thread-1 (]: Acquiring new duckdb connection 'model.yellow_taxi.model1'
+[0m01:58:28.273583 [debug] [Thread-1 (]: Began compiling node model.yellow_taxi.model1
+[0m01:58:28.279473 [debug] [Thread-1 (]: Writing injected SQL for node "model.yellow_taxi.model1"
+[0m01:58:28.281476 [debug] [Thread-1 (]: Timing info for model.yellow_taxi.model1 (compile): 01:58:28.273583 => 01:58:28.281476
+[0m01:58:28.282473 [debug] [Thread-1 (]: Began executing node model.yellow_taxi.model1
+[0m01:58:28.313488 [debug] [Thread-1 (]: Writing runtime sql for node "model.yellow_taxi.model1"
+[0m01:58:28.314488 [debug] [Thread-1 (]: Using duckdb connection "model.yellow_taxi.model1"
+[0m01:58:28.315472 [debug] [Thread-1 (]: On model.yellow_taxi.model1: BEGIN
+[0m01:58:28.315472 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m01:58:28.321728 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m01:58:28.321728 [debug] [Thread-1 (]: Using duckdb connection "model.yellow_taxi.model1"
+[0m01:58:28.322739 [debug] [Thread-1 (]: On model.yellow_taxi.model1: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "yellow_taxi", "target_name": "dev", "node_id": "model.yellow_taxi.model1"} */
+
+  
+  create view "dev"."main"."model1__dbt_tmp" as (
+    /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select *
+    from read_parquet("yellow_tripdata_2023-01.parquet")
+
+)
+
+select * 
+from source_data
+where Payment_type = 1 and Tip_amount > 0
+  );
+
+[0m01:58:28.331787 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m01:58:28.336812 [debug] [Thread-1 (]: Using duckdb connection "model.yellow_taxi.model1"
+[0m01:58:28.337817 [debug] [Thread-1 (]: On model.yellow_taxi.model1: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "yellow_taxi", "target_name": "dev", "node_id": "model.yellow_taxi.model1"} */
+alter view "dev"."main"."model1__dbt_tmp" rename to "model1"
+[0m01:58:28.338788 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m01:58:28.353808 [debug] [Thread-1 (]: On model.yellow_taxi.model1: COMMIT
+[0m01:58:28.353808 [debug] [Thread-1 (]: Using duckdb connection "model.yellow_taxi.model1"
+[0m01:58:28.354788 [debug] [Thread-1 (]: On model.yellow_taxi.model1: COMMIT
+[0m01:58:28.356787 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m01:58:28.361788 [debug] [Thread-1 (]: Using duckdb connection "model.yellow_taxi.model1"
+[0m01:58:28.361788 [debug] [Thread-1 (]: On model.yellow_taxi.model1: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "yellow_taxi", "target_name": "dev", "node_id": "model.yellow_taxi.model1"} */
+drop view if exists "dev"."main"."model1__dbt_backup" cascade
+[0m01:58:28.362814 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m01:58:28.363788 [debug] [Thread-1 (]: Timing info for model.yellow_taxi.model1 (execute): 01:58:28.282473 => 01:58:28.363788
+[0m01:58:28.363788 [debug] [Thread-1 (]: On model.yellow_taxi.model1: Close
+[0m01:58:28.369166 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2b9d00f7-528d-4cd8-82bc-5793b3ec5a3c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000232D328DC70>]}
+[0m01:58:28.370154 [info ] [Thread-1 (]: 1 of 12 OK created sql view model main.model1 .................................. [[32mOK[0m in 0.10s]
+[0m01:58:28.371137 [debug] [Thread-1 (]: Finished running node model.yellow_taxi.model1
+[0m01:58:28.371137 [debug] [Thread-1 (]: Began running node seed.yellow_taxi.zipcodes
+[0m01:58:28.372134 [info ] [Thread-1 (]: 2 of 12 START seed file main.zipcodes .......................................... [RUN]
+[0m01:58:28.373136 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.yellow_taxi.model1, now seed.yellow_taxi.zipcodes)
+[0m01:58:28.373136 [debug] [Thread-1 (]: Began compiling node seed.yellow_taxi.zipcodes
+[0m01:58:28.374136 [debug] [Thread-1 (]: Timing info for seed.yellow_taxi.zipcodes (compile): 01:58:28.373136 => 01:58:28.373136
+[0m01:58:28.374136 [debug] [Thread-1 (]: Began executing node seed.yellow_taxi.zipcodes
+[0m01:58:29.489209 [debug] [Thread-1 (]: Using duckdb connection "seed.yellow_taxi.zipcodes"
+[0m01:58:29.489209 [debug] [Thread-1 (]: On seed.yellow_taxi.zipcodes: BEGIN
+[0m01:58:29.490210 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m01:58:29.512881 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m01:58:29.512881 [debug] [Thread-1 (]: Using duckdb connection "seed.yellow_taxi.zipcodes"
+[0m01:58:29.513881 [debug] [Thread-1 (]: On seed.yellow_taxi.zipcodes: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "yellow_taxi", "target_name": "dev", "node_id": "seed.yellow_taxi.zipcodes"} */
+truncate table "dev"."main"."zipcodes"
+[0m01:58:29.516880 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m01:58:29.526900 [debug] [Thread-1 (]: Using duckdb connection "seed.yellow_taxi.zipcodes"
+[0m01:58:29.526900 [debug] [Thread-1 (]: On seed.yellow_taxi.zipcodes: 
+          COPY "dev"."main"."zipcodes" FROM 'C:\Coding\dbt_project\yellow_taxi\seeds\zipcodes.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        ...
+[0m01:58:29.589880 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m01:58:29.595880 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.yellow_taxi.zipcodes"
+[0m01:58:29.597881 [debug] [Thread-1 (]: On seed.yellow_taxi.zipcodes: COMMIT
+[0m01:58:29.597881 [debug] [Thread-1 (]: Using duckdb connection "seed.yellow_taxi.zipcodes"
+[0m01:58:29.598882 [debug] [Thread-1 (]: On seed.yellow_taxi.zipcodes: COMMIT
+[0m01:58:29.624583 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m01:58:29.625550 [debug] [Thread-1 (]: Timing info for seed.yellow_taxi.zipcodes (execute): 01:58:28.374136 => 01:58:29.625550
+[0m01:58:29.626549 [debug] [Thread-1 (]: On seed.yellow_taxi.zipcodes: Close
+[0m01:58:29.686575 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2b9d00f7-528d-4cd8-82bc-5793b3ec5a3c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000232D46EF8C0>]}
+[0m01:58:29.686575 [info ] [Thread-1 (]: 2 of 12 OK loaded seed file main.zipcodes ...................................... [[32mINSERT 41483[0m in 1.31s]
+[0m01:58:29.687565 [debug] [Thread-1 (]: Finished running node seed.yellow_taxi.zipcodes
+[0m01:58:29.688551 [debug] [Thread-1 (]: Began running node test.yellow_taxi.not_null_model1_Payment_type.be09029447
+[0m01:58:29.688551 [info ] [Thread-1 (]: 3 of 12 START test not_null_model1_Payment_type ................................ [RUN]
+[0m01:58:29.689551 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.yellow_taxi.zipcodes, now test.yellow_taxi.not_null_model1_Payment_type.be09029447)
+[0m01:58:29.689551 [debug] [Thread-1 (]: Began compiling node test.yellow_taxi.not_null_model1_Payment_type.be09029447
+[0m01:58:29.701567 [debug] [Thread-1 (]: Writing injected SQL for node "test.yellow_taxi.not_null_model1_Payment_type.be09029447"
+[0m01:58:29.702549 [debug] [Thread-1 (]: Timing info for test.yellow_taxi.not_null_model1_Payment_type.be09029447 (compile): 01:58:29.690574 => 01:58:29.701567
+[0m01:58:29.702549 [debug] [Thread-1 (]: Began executing node test.yellow_taxi.not_null_model1_Payment_type.be09029447
+[0m01:58:29.715548 [debug] [Thread-1 (]: Writing runtime sql for node "test.yellow_taxi.not_null_model1_Payment_type.be09029447"
+[0m01:58:29.716549 [debug] [Thread-1 (]: Using duckdb connection "test.yellow_taxi.not_null_model1_Payment_type.be09029447"
+[0m01:58:29.716549 [debug] [Thread-1 (]: On test.yellow_taxi.not_null_model1_Payment_type.be09029447: BEGIN
+[0m01:58:29.717549 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m01:58:29.726550 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m01:58:29.726550 [debug] [Thread-1 (]: Using duckdb connection "test.yellow_taxi.not_null_model1_Payment_type.be09029447"
+[0m01:58:29.727550 [debug] [Thread-1 (]: On test.yellow_taxi.not_null_model1_Payment_type.be09029447: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "yellow_taxi", "target_name": "dev", "node_id": "test.yellow_taxi.not_null_model1_Payment_type.be09029447"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select Payment_type
+from "dev"."main"."model1"
+where Payment_type is null
+
+
+
+      
+    ) dbt_internal_test
+[0m01:58:29.730286 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m01:58:29.732292 [debug] [Thread-1 (]: Timing info for test.yellow_taxi.not_null_model1_Payment_type.be09029447 (execute): 01:58:29.702549 => 01:58:29.732292
+[0m01:58:29.732292 [debug] [Thread-1 (]: On test.yellow_taxi.not_null_model1_Payment_type.be09029447: ROLLBACK
+[0m01:58:29.733292 [debug] [Thread-1 (]: Failed to rollback 'test.yellow_taxi.not_null_model1_Payment_type.be09029447'
+[0m01:58:29.734292 [debug] [Thread-1 (]: On test.yellow_taxi.not_null_model1_Payment_type.be09029447: Close
+[0m01:58:29.736323 [info ] [Thread-1 (]: 3 of 12 PASS not_null_model1_Payment_type ...................................... [[32mPASS[0m in 0.05s]
+[0m01:58:29.736875 [debug] [Thread-1 (]: Finished running node test.yellow_taxi.not_null_model1_Payment_type.be09029447
+[0m01:58:29.737934 [debug] [Thread-1 (]: Began running node test.yellow_taxi.not_null_model1_tip_amount.2849ca42e9
+[0m01:58:29.737934 [info ] [Thread-1 (]: 4 of 12 START test not_null_model1_tip_amount .................................. [RUN]
+[0m01:58:29.739610 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.yellow_taxi.not_null_model1_Payment_type.be09029447, now test.yellow_taxi.not_null_model1_tip_amount.2849ca42e9)
+[0m01:58:29.739610 [debug] [Thread-1 (]: Began compiling node test.yellow_taxi.not_null_model1_tip_amount.2849ca42e9
+[0m01:58:29.744624 [debug] [Thread-1 (]: Writing injected SQL for node "test.yellow_taxi.not_null_model1_tip_amount.2849ca42e9"
+[0m01:58:29.745617 [debug] [Thread-1 (]: Timing info for test.yellow_taxi.not_null_model1_tip_amount.2849ca42e9 (compile): 01:58:29.739610 => 01:58:29.744624
+[0m01:58:29.745617 [debug] [Thread-1 (]: Began executing node test.yellow_taxi.not_null_model1_tip_amount.2849ca42e9
+[0m01:58:29.747616 [debug] [Thread-1 (]: Writing runtime sql for node "test.yellow_taxi.not_null_model1_tip_amount.2849ca42e9"
+[0m01:58:29.748616 [debug] [Thread-1 (]: Using duckdb connection "test.yellow_taxi.not_null_model1_tip_amount.2849ca42e9"
+[0m01:58:29.748616 [debug] [Thread-1 (]: On test.yellow_taxi.not_null_model1_tip_amount.2849ca42e9: BEGIN
+[0m01:58:29.749616 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m01:58:29.754615 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m01:58:29.754615 [debug] [Thread-1 (]: Using duckdb connection "test.yellow_taxi.not_null_model1_tip_amount.2849ca42e9"
+[0m01:58:29.755619 [debug] [Thread-1 (]: On test.yellow_taxi.not_null_model1_tip_amount.2849ca42e9: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "yellow_taxi", "target_name": "dev", "node_id": "test.yellow_taxi.not_null_model1_tip_amount.2849ca42e9"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select tip_amount
+from "dev"."main"."model1"
+where tip_amount is null
+
+
+
+      
+    ) dbt_internal_test
+[0m01:58:29.756619 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m01:58:29.758620 [debug] [Thread-1 (]: Timing info for test.yellow_taxi.not_null_model1_tip_amount.2849ca42e9 (execute): 01:58:29.745617 => 01:58:29.757620
+[0m01:58:29.758620 [debug] [Thread-1 (]: On test.yellow_taxi.not_null_model1_tip_amount.2849ca42e9: ROLLBACK
+[0m01:58:29.759620 [debug] [Thread-1 (]: Failed to rollback 'test.yellow_taxi.not_null_model1_tip_amount.2849ca42e9'
+[0m01:58:29.759620 [debug] [Thread-1 (]: On test.yellow_taxi.not_null_model1_tip_amount.2849ca42e9: Close
+[0m01:58:29.762617 [info ] [Thread-1 (]: 4 of 12 PASS not_null_model1_tip_amount ........................................ [[32mPASS[0m in 0.02s]
+[0m01:58:29.763493 [debug] [Thread-1 (]: Finished running node test.yellow_taxi.not_null_model1_tip_amount.2849ca42e9
+[0m01:58:29.764507 [debug] [Thread-1 (]: Began running node test.yellow_taxi.tip_amount_grt_zero
+[0m01:58:29.764507 [info ] [Thread-1 (]: 5 of 12 START test tip_amount_grt_zero ......................................... [RUN]
+[0m01:58:29.765507 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.yellow_taxi.not_null_model1_tip_amount.2849ca42e9, now test.yellow_taxi.tip_amount_grt_zero)
+[0m01:58:29.765507 [debug] [Thread-1 (]: Began compiling node test.yellow_taxi.tip_amount_grt_zero
+[0m01:58:29.768507 [debug] [Thread-1 (]: Writing injected SQL for node "test.yellow_taxi.tip_amount_grt_zero"
+[0m01:58:29.769644 [debug] [Thread-1 (]: Timing info for test.yellow_taxi.tip_amount_grt_zero (compile): 01:58:29.766506 => 01:58:29.769644
+[0m01:58:29.770641 [debug] [Thread-1 (]: Began executing node test.yellow_taxi.tip_amount_grt_zero
+[0m01:58:29.772622 [debug] [Thread-1 (]: Writing runtime sql for node "test.yellow_taxi.tip_amount_grt_zero"
+[0m01:58:29.772622 [debug] [Thread-1 (]: Using duckdb connection "test.yellow_taxi.tip_amount_grt_zero"
+[0m01:58:29.773508 [debug] [Thread-1 (]: On test.yellow_taxi.tip_amount_grt_zero: BEGIN
+[0m01:58:29.773508 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m01:58:29.779514 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m01:58:29.779514 [debug] [Thread-1 (]: Using duckdb connection "test.yellow_taxi.tip_amount_grt_zero"
+[0m01:58:29.780569 [debug] [Thread-1 (]: On test.yellow_taxi.tip_amount_grt_zero: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "yellow_taxi", "target_name": "dev", "node_id": "test.yellow_taxi.tip_amount_grt_zero"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      --if this test returns true then if means our model is faulty so expect no 0 tip_amounts
+select * from "dev"."main"."model1"
+where 'Tip_amount' = 0
+      
+    ) dbt_internal_test
+[0m01:58:29.804462 [debug] [Thread-1 (]: Timing info for test.yellow_taxi.tip_amount_grt_zero (execute): 01:58:29.770641 => 01:58:29.803464
+[0m01:58:29.804462 [debug] [Thread-1 (]: On test.yellow_taxi.tip_amount_grt_zero: ROLLBACK
+[0m01:58:29.815117 [debug] [Thread-1 (]: Failed to rollback 'test.yellow_taxi.tip_amount_grt_zero'
+[0m01:58:29.816135 [debug] [Thread-1 (]: On test.yellow_taxi.tip_amount_grt_zero: Close
+[0m01:58:29.820151 [debug] [Thread-1 (]: Runtime Error in test tip_amount_grt_zero (tests\tip_amount_grt_zero.sql)
+  Conversion Error: Could not convert string 'Tip_amount' to INT32
+[0m01:58:29.821156 [error] [Thread-1 (]: 5 of 12 ERROR tip_amount_grt_zero .............................................. [[31mERROR[0m in 0.06s]
+[0m01:58:29.822134 [debug] [Thread-1 (]: Finished running node test.yellow_taxi.tip_amount_grt_zero
+[0m01:58:29.822134 [debug] [Thread-1 (]: Began running node test.yellow_taxi.not_zipcodes_zipcode.49325a5a89
+[0m01:58:29.823132 [info ] [Thread-1 (]: 6 of 12 START test not_zipcodes_zipcode ........................................ [RUN]
+[0m01:58:29.824135 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.yellow_taxi.tip_amount_grt_zero, now test.yellow_taxi.not_zipcodes_zipcode.49325a5a89)
+[0m01:58:29.824135 [debug] [Thread-1 (]: Began compiling node test.yellow_taxi.not_zipcodes_zipcode.49325a5a89
+[0m01:58:29.832133 [debug] [Thread-1 (]: Timing info for test.yellow_taxi.not_zipcodes_zipcode.49325a5a89 (compile): 01:58:29.824135 => 01:58:29.832133
+[0m01:58:29.835608 [debug] [Thread-1 (]: Compilation Error in test not_zipcodes_zipcode (seeds\properties.yml)
+  'test_not' is undefined. This can happen when calling a macro that does not exist. Check for typos and/or install package dependencies with "dbt deps".
+[0m01:58:29.836643 [error] [Thread-1 (]: 6 of 12 ERROR not_zipcodes_zipcode ............................................. [[31mERROR[0m in 0.01s]
+[0m01:58:29.837614 [debug] [Thread-1 (]: Finished running node test.yellow_taxi.not_zipcodes_zipcode.49325a5a89
+[0m01:58:29.837614 [debug] [Thread-1 (]: Began running node test.yellow_taxi.unique_zipcodes_zipcode.d35e5f11fb
+[0m01:58:29.838618 [info ] [Thread-1 (]: 7 of 12 START test unique_zipcodes_zipcode ..................................... [RUN]
+[0m01:58:29.839613 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.yellow_taxi.not_zipcodes_zipcode.49325a5a89, now test.yellow_taxi.unique_zipcodes_zipcode.d35e5f11fb)
+[0m01:58:29.839613 [debug] [Thread-1 (]: Began compiling node test.yellow_taxi.unique_zipcodes_zipcode.d35e5f11fb
+[0m01:58:29.846613 [debug] [Thread-1 (]: Writing injected SQL for node "test.yellow_taxi.unique_zipcodes_zipcode.d35e5f11fb"
+[0m01:58:29.848614 [debug] [Thread-1 (]: Timing info for test.yellow_taxi.unique_zipcodes_zipcode.d35e5f11fb (compile): 01:58:29.840618 => 01:58:29.847632
+[0m01:58:29.848614 [debug] [Thread-1 (]: Began executing node test.yellow_taxi.unique_zipcodes_zipcode.d35e5f11fb
+[0m01:58:29.850615 [debug] [Thread-1 (]: Writing runtime sql for node "test.yellow_taxi.unique_zipcodes_zipcode.d35e5f11fb"
+[0m01:58:29.852614 [debug] [Thread-1 (]: Using duckdb connection "test.yellow_taxi.unique_zipcodes_zipcode.d35e5f11fb"
+[0m01:58:29.852614 [debug] [Thread-1 (]: On test.yellow_taxi.unique_zipcodes_zipcode.d35e5f11fb: BEGIN
+[0m01:58:29.853613 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m01:58:29.857613 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m01:58:29.858614 [debug] [Thread-1 (]: Using duckdb connection "test.yellow_taxi.unique_zipcodes_zipcode.d35e5f11fb"
+[0m01:58:29.858614 [debug] [Thread-1 (]: On test.yellow_taxi.unique_zipcodes_zipcode.d35e5f11fb: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "yellow_taxi", "target_name": "dev", "node_id": "test.yellow_taxi.unique_zipcodes_zipcode.d35e5f11fb"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    zipcode as unique_field,
+    count(*) as n_records
+
+from "dev"."main"."zipcodes"
+where zipcode is not null
+group by zipcode
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m01:58:29.866612 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m01:58:29.867616 [debug] [Thread-1 (]: Timing info for test.yellow_taxi.unique_zipcodes_zipcode.d35e5f11fb (execute): 01:58:29.849615 => 01:58:29.867616
+[0m01:58:29.868638 [debug] [Thread-1 (]: On test.yellow_taxi.unique_zipcodes_zipcode.d35e5f11fb: ROLLBACK
+[0m01:58:29.869633 [debug] [Thread-1 (]: Failed to rollback 'test.yellow_taxi.unique_zipcodes_zipcode.d35e5f11fb'
+[0m01:58:29.869633 [debug] [Thread-1 (]: On test.yellow_taxi.unique_zipcodes_zipcode.d35e5f11fb: Close
+[0m01:58:29.871638 [error] [Thread-1 (]: 7 of 12 FAIL 2 unique_zipcodes_zipcode ......................................... [[31mFAIL 2[0m in 0.03s]
+[0m01:58:29.872613 [debug] [Thread-1 (]: Finished running node test.yellow_taxi.unique_zipcodes_zipcode.d35e5f11fb
+[0m01:58:29.873614 [debug] [Thread-1 (]: Began running node model.yellow_taxi.model2
+[0m01:58:29.873614 [info ] [Thread-1 (]: 8 of 12 SKIP relation main.model2 .............................................. [[33mSKIP[0m]
+[0m01:58:29.874615 [debug] [Thread-1 (]: Finished running node model.yellow_taxi.model2
+[0m01:58:29.875613 [debug] [Thread-1 (]: Began running node test.yellow_taxi.not_null_model2_province_code.a06b619b2e
+[0m01:58:29.875613 [info ] [Thread-1 (]: 9 of 12 SKIP test not_null_model2_province_code ................................ [[33mSKIP[0m]
+[0m01:58:29.876613 [debug] [Thread-1 (]: Finished running node test.yellow_taxi.not_null_model2_province_code.a06b619b2e
+[0m01:58:29.877613 [debug] [Thread-1 (]: Began running node test.yellow_taxi.seed_zipcode_unique
+[0m01:58:29.877613 [info ] [Thread-1 (]: 10 of 12 SKIP test seed_zipcode_unique ......................................... [[33mSKIP[0m]
+[0m01:58:29.878613 [debug] [Thread-1 (]: Finished running node test.yellow_taxi.seed_zipcode_unique
+[0m01:58:29.878613 [debug] [Thread-1 (]: Began running node test.yellow_taxi.unique_model2_province_code.f4725d47c2
+[0m01:58:29.879614 [info ] [Thread-1 (]: 11 of 12 SKIP test unique_model2_province_code ................................. [[33mSKIP[0m]
+[0m01:58:29.879614 [debug] [Thread-1 (]: Finished running node test.yellow_taxi.unique_model2_province_code.f4725d47c2
+[0m01:58:29.880646 [debug] [Thread-1 (]: Began running node model.yellow_taxi.model3
+[0m01:58:29.880646 [info ] [Thread-1 (]: 12 of 12 SKIP relation main.model3 ............................................. [[33mSKIP[0m]
+[0m01:58:29.881615 [debug] [Thread-1 (]: Finished running node model.yellow_taxi.model3
+[0m01:58:29.882613 [debug] [MainThread]: Using duckdb connection "master"
+[0m01:58:29.883613 [debug] [MainThread]: On master: BEGIN
+[0m01:58:29.883613 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m01:58:29.890612 [debug] [MainThread]: SQL status: OK in 0.0 seconds
+[0m01:58:29.890612 [debug] [MainThread]: On master: COMMIT
+[0m01:58:29.891614 [debug] [MainThread]: Using duckdb connection "master"
+[0m01:58:29.891614 [debug] [MainThread]: On master: COMMIT
+[0m01:58:29.891614 [debug] [MainThread]: SQL status: OK in 0.0 seconds
+[0m01:58:29.892618 [debug] [MainThread]: On master: Close
+[0m01:58:29.894619 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m01:58:29.894619 [debug] [MainThread]: Connection 'create_dev_main' was properly closed.
+[0m01:58:29.895629 [debug] [MainThread]: Connection 'list_dev_main' was properly closed.
+[0m01:58:29.895629 [debug] [MainThread]: Connection 'test.yellow_taxi.unique_zipcodes_zipcode.d35e5f11fb' was properly closed.
+[0m01:58:29.896615 [info ] [MainThread]: 
+[0m01:58:29.896615 [info ] [MainThread]: Finished running 3 view models, 1 seed, 8 tests in 0 hours 0 minutes and 1.74 seconds (1.74s).
+[0m01:58:29.898637 [debug] [MainThread]: Command end result
+[0m01:58:29.906614 [info ] [MainThread]: 
+[0m01:58:29.907616 [info ] [MainThread]: [31mCompleted with 3 errors and 0 warnings:[0m
+[0m01:58:29.908616 [info ] [MainThread]: 
+[0m01:58:29.909630 [error] [MainThread]:   Runtime Error in test tip_amount_grt_zero (tests\tip_amount_grt_zero.sql)
+  Conversion Error: Could not convert string 'Tip_amount' to INT32
+[0m01:58:29.910615 [info ] [MainThread]: 
+[0m01:58:29.910615 [error] [MainThread]:   Compilation Error in test not_zipcodes_zipcode (seeds\properties.yml)
+  'test_not' is undefined. This can happen when calling a macro that does not exist. Check for typos and/or install package dependencies with "dbt deps".
+[0m01:58:29.911620 [info ] [MainThread]: 
+[0m01:58:29.912613 [error] [MainThread]: [31mFailure in test unique_zipcodes_zipcode (seeds\properties.yml)[0m
+[0m01:58:29.912613 [error] [MainThread]:   Got 2 results, configured to fail if != 0
+[0m01:58:29.913616 [info ] [MainThread]: 
+[0m01:58:29.914614 [info ] [MainThread]:   compiled Code at target\compiled\yellow_taxi\seeds\properties.yml\unique_zipcodes_zipcode.sql
+[0m01:58:29.914614 [info ] [MainThread]: 
+[0m01:58:29.915613 [info ] [MainThread]: Done. PASS=4 WARN=0 ERROR=3 SKIP=5 TOTAL=12
+[0m01:58:29.916616 [debug] [MainThread]: Command `dbt build` failed at 01:58:29.916616 after 2.31 seconds
+[0m01:58:29.917617 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000232D2FEBEF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000232D3213890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000232D2717D40>]}
+[0m01:58:29.917617 [debug] [MainThread]: Flushing usage events
