@@ -1,20 +1,12 @@
-Welcome to your new dbt project!
 
-### Using the starter project
+# Welcome to my dbt project Data transformation 
+
 
 ### link to data: https://1drv.ms/u/s!AkYq687jBBufgakcvXMbJVGH_X2l-w?e=tuauKB
 
-Try running the following commands:
+Try running the following commands to launch default practice example:
 - dbt run
 - dbt test
-
-
-### Resources:
-- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
-- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
-- Join the [chat](https://community.getdbt.com/) on Slack for live discussions and support
-- Find [dbt events](https://events.getdbt.com) near you
-- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
 
 
 ### This project aim to showcase a few modelling usecases in DBT i've created myself:::
@@ -32,3 +24,11 @@ Try running the following commands:
 - Use dbt build to execute all the steps
 - Genrate a doc for the project  
 - Load the target data to a python notebook and a visual of areas where these credit card users have given a tip .
+
+
+### Resources:
+- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
+- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
+- Join the [chat](https://community.getdbt.com/) on Slack for live discussions and support
+- Find [dbt events](https://events.getdbt.com) near you
+- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
