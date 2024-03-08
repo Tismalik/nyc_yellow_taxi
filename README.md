@@ -25,6 +25,9 @@ Try running the following commands to launch default practice example:
 - Genrate a doc for the project  
 - Load the target data to a python notebook and a visual of areas where these credit card users have given a tip .
 
+Results:
+- Lineage Graph <img width="928" alt="Lineage Graph" src="https://github.com/Tismalik/nyc_yellow_taxi/assets/78315034/53fd57a5-7224-4f64-a898-fc477c79aa0e">
+
 
 ### Resources:
 - Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
