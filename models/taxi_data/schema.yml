@@ -1,0 +1,38 @@
+
+version: 2
+
+models:
+  - name: model1
+    description: "A table cointaining all passenger who paid fare with credit card and gave tips"
+    columns:
+      - name: Payment_type
+        description: "Payment method used to facilitate trip"
+        tests:
+          - not_null
+          - accepted_values:
+              values: [1]
+      - name: tip_amount
+        description: "An amount given to show appreciation"
+        tests:
+          - not_null
+
+  - name: model2
+    description: Seed Data zip code showing a unique province code in the new york area
+    columns:
+      - name: province_code
+        description: acts as my primary key
+        tests:
+          - unique
+          - not_null
+
+  - name: model3
+    description: "Joined Taxi and Post codes data"
+    columns:
+      - name: province_code
+        description: "acts as my primary key"
+        tests:
+          - joined_data_no_dup:
+              column_name2: DOLocationID
+
+
+      
