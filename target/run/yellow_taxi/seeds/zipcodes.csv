@@ -1,0 +1,11 @@
+
+    
+    
+    truncate table "dev"."main"."zipcodes";
+    -- dbt seed --
+    
+          COPY "dev"."main"."zipcodes" FROM 'C:\Coding\dbt_project\yellow_taxi\seeds\zipcodes.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        
+
+;
+  
